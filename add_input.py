@@ -1,9 +1,7 @@
-from datetime import datetime
-
 created_date = (input('Введите дату создания заметки в формате "день-месяц-год": '))
 issue_date = (input('Введите дату истечения срока заметки в формате "день-месяц-год: '))
-created_date_1 = (str(created_date[0:5])) #сокращенная дата до д-м без года
-issue_date_1 = (str(issue_date[0:5]))
+created_date_1 = (created_date[0:5]) #сокращенная дата создания заметки д-м без года
+issue_date_1 = (issue_date[0:5]) #сокращенная дата истечесния срока заметки д-м без года
 
 username = input('Введите имя пользователя: ')
 title = input('Введите заголовок заметки: ')
