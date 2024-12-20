@@ -1,7 +1,7 @@
-created_date = (input('Введите дату создания заметки в формате "день-месяц-год": '))
-issue_date = (input('Введите дату истечения срока заметки в формате "день-месяц-год: '))
-created_date_1 = (created_date[0:5]) #сокращенная дата до д-м без года
-issue_date_1 = (issue_date[0:5])
+created_date = input('Введите дату создания заметки в формате "день-месяц-год": ')
+issue_date = input('Введите дату истечения срока заметки в формате "день-месяц-год: ')
+created_date_1 = created_date[0:5] #сокращенная дата до д-м без года
+issue_date_1 = issue_date[0:5]
 username = input('Введите имя пользователя: ')
 # Первый заголовок
 title1 = input('Введите заголовок заметки: ')
@@ -45,12 +45,12 @@ print('Статус:', status)
 (print('Дата создания заметки: ', created_date_1))
 print('Дата истечения срока заметки: ', issue_date_1)
 print(titles)
-note = [
-    username,
-    content,
-    status,
-    created_date,
-    issue_date,
-    [titles],
-        ]
+note = {
+    'Имя пользователя' : username,
+    'Заголовки заметки' : [titles],
+    'Описание заметки' : content,
+    'Статус заметки': status,
+    'Дата создания заметки' : created_date,
+    'Дата истечения срока заметки': issue_date,
+    }
 print(note)
